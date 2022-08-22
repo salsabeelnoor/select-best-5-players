@@ -1,25 +1,30 @@
 document.getElementById('btn-messi').addEventListener('click', function(){
-    const playerName = getPlayerName('name-messi', 'btn-messi');
-    console.log(playerName);
+    getAndAddPlayerName('name-messi', 'btn-messi');
     
 });
 document.getElementById('btn-machado').addEventListener('click', function(){
-    const playerName = getPlayerName('name-machado', 'btn-machado');
-    console.log(playerName);
+    getAndAddPlayerName('name-machado', 'btn-machado');
+    
 });
 document.getElementById('btn-mbappe').addEventListener('click', function(){
-    const playerName = getPlayerName('name-mbappe', 'btn-mbappe');
-    console.log(playerName);
+    getAndAddPlayerName('name-mbappe', 'btn-mbappe');
+    
 });
 document.getElementById('btn-neymar').addEventListener('click', function(){
-    const playerName = getPlayerName('name-neymar', 'btn-neymar');
-    console.log(playerName);
+    getAndAddPlayerName('name-neymar', 'btn-neymar');
+    
 });
 document.getElementById('btn-ramos').addEventListener('click', function(){
-    const playerName = getPlayerName('name-ramos', 'btn-ramos');
-    console.log(playerName);
+    getAndAddPlayerName('name-ramos', 'btn-ramos');
+    
 });
 document.getElementById('btn-sanches').addEventListener('click', function(){
-    const playerName = getPlayerName('name-sanches', 'btn-sanches');
-    console.log(playerName);
+    getAndAddPlayerName('name-sanches', 'btn-sanches');
+    
+});
+
+document.getElementById('btn-player-cost').addEventListener('click',function(){
+    const perPlayerCost = parseFloat(document.getElementById('per-player-cost-field').value);
+    const playerCount = document.querySelectorAll("li").length;
+    document.getElementById('player-expense').innerText = perPlayerCost * playerCount;
 });

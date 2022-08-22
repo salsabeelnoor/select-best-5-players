@@ -1,8 +1,7 @@
-function getPlayerName(playerId, playerBtn){
+function getAndAddPlayerName(playerId, playerBtn){
     document.getElementById('best-five-txt').style.display = "none"
     //get player name
     const playerName = document.getElementById(playerId).innerText;
-    
     
     //create li
     const playerList = document.getElementById('player-list');
@@ -19,5 +18,4 @@ function getPlayerName(playerId, playerBtn){
         listEntry.appendChild(document.createTextNode(playerName));
         playerList.appendChild(listEntry);
     }
-    return playerName;
 }
