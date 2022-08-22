@@ -40,6 +40,7 @@ document.getElementById('total-cost').addEventListener('click', function(){
         alert('Please enter a valid number');
     }
     else{
+        //calculate total cost
         document.getElementById('calculated-total').innerText = managerCost + coachCost + (parseFloat(document.getElementById('player-expense').innerText));
     }
 
