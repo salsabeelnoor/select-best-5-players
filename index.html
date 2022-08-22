@@ -48,7 +48,7 @@
         </section>
     </header>
     <main class="bg-[#151515]">
-        <section class="main-body w-10/12 mx-auto flex">
+        <section class="main-body w-10/12 mx-auto flex pt-20">
             <section class="card-section w-8/12 mx-auto border-2 border-rose-500 grid grid-cols-3 gap-4 font-manrope">
                 <div
                     class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -64,7 +64,8 @@
                             <p class="font-manrope text-[#B3B3B3]">.</p>
                             <p class="font-manrope text-[#B3B3B3]">300 Assist</p>
                         </div>
-                        <button class="text-center bg-[#015196] px-[91px] py-[10px] block mx-auto">SELECT</button>
+                        <button
+                            class="text-center bg-[#015196] px-[91px] py-[10px] block mx-auto text-base text-white font-bold">SELECT</button>
                     </div>
                 </div>
                 <div
@@ -81,7 +82,8 @@
                             <p class="font-manrope text-[#B3B3B3]">.</p>
                             <p class="font-manrope text-[#B3B3B3]">120 Assist</p>
                         </div>
-                        <button class="text-center bg-[#015196] px-[91px] py-[10px] block mx-auto">SELECT</button>
+                        <button
+                            class="text-center bg-[#015196] px-[91px] py-[10px] block mx-auto text-base text-white font-bold">SELECT</button>
                     </div>
                 </div>
                 <div
@@ -98,7 +100,8 @@
                             <p class="font-manrope text-[#B3B3B3]">.</p>
                             <p class="font-manrope text-[#B3B3B3]">100 Assist</p>
                         </div>
-                        <button class="text-center bg-[#015196] px-[91px] py-[10px] block mx-auto">SELECT</button>
+                        <button
+                            class="text-center bg-[#015196] px-[91px] py-[10px] block mx-auto text-base text-white font-bold">SELECT</button>
                     </div>
                 </div>
                 <div
@@ -115,7 +118,8 @@
                             <p class="font-manrope text-[#B3B3B3]">.</p>
                             <p class="font-manrope text-[#B3B3B3]">110 Assist</p>
                         </div>
-                        <button class="text-center bg-[#015196] px-[91px] py-[10px] block mx-auto">SELECT</button>
+                        <button
+                            class="text-center bg-[#015196] px-[91px] py-[10px] block mx-auto text-base text-white font-bold">SELECT</button>
                     </div>
                 </div>
                 <div
@@ -132,7 +136,8 @@
                             <p class="font-manrope text-[#B3B3B3]">.</p>
                             <p class="font-manrope text-[#B3B3B3]">130 Assist</p>
                         </div>
-                        <button class="text-center bg-[#015196] px-[91px] py-[10px] block mx-auto">SELECT</button>
+                        <button
+                            class="text-center bg-[#015196] px-[91px] py-[10px] block mx-auto text-base text-white font-bold">SELECT</button>
                     </div>
                 </div>
                 <div
@@ -150,13 +155,51 @@
                             <p class="font-manrope text-[#B3B3B3]">.</p>
                             <p class="font-manrope text-[#B3B3B3]">125 Assist</p>
                         </div>
-                        <button class="text-center bg-[#015196] px-[91px] py-[10px] block mx-auto">SELECT</button>
+                        <button
+                            class="text-center bg-[#015196] px-[91px] py-[10px] block mx-auto text-base text-white font-bold">SELECT</button>
                     </div>
                 </div>
             </section>
-            <section class="selection-budget-section">
 
+            <section class="select-budget-section">
+                <section class="select-players bg-[#0D0D0D] border-2 border-rose-500 p-8 mb-10 font-manrope">
+                    <h1 class="text-2xl text-white mb-2 text-center">Selected - V</h1>
+                    <hr class="mb-5 mx-12">
+                    <p class="text-[#AFAFAF] text-base block">Select your five best players</p>
+                    <ol class="list-decimal pl-7 font-manrope"></ol>
+                </section>
+
+                <section class="budget bg-[#0D0D0D] p-8 font-manrope border-2 border-rose-500">
+                    <h1 class="text-2xl text-white mb-2 text-center">Budget</h1>
+                    <hr class="mb-10 mx-12">
+                    <div class="flex mb-6 justify-center">
+                        <p class="text-[#AFAFAF] mr-4 mt-2">Per Player</p>
+                        <input type="text" class="text-black w-1/2">
+                    </div>
+                    <button
+                        class="text-center bg-[#015196] px-[87px] py-[10px] block mx-auto font-manrope text-base text-white font-bold mb-6">Calculate</button>
+                    <div class="expense flex justify-center text-white mb-6">
+                        <p class="mr-5 text-[#AFAFAF]">Player Expenses</p>
+                        <p>$ <span>0</span></p>
+                    </div>
+                    <div class="flex mb-4 justify-center">
+                        <p class="text-[#AFAFAF] mr-4 mt-2">Manager</p>
+                        <input type="text" class="text-black w-1/2">
+                    </div>
+                    <div class="flex mb-6 justify-center">
+                        <p class="text-[#AFAFAF] mr-9 mt-2">Coach</p>
+                        <input type="text" class="text-black w-1/2">
+                    </div>
+                    <button
+                        class="text-center bg-[#015196] px-[62px] py-[10px] block mx-auto font-manrope text-base text-white font-bold mb-6">Calculate
+                        Total</button>
+                    <div class="expense flex justify-center text-white mb-6">
+                        <p class="mr-5 text-[#AFAFAF]">Total</p>
+                        <p class="text-[#FF5E19] font-bold">$ <span>0</span></p>
+                    </div>
+                </section>
             </section>
+
         </section>
     </main>
     <!-- js components  -->
