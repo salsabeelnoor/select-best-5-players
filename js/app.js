@@ -26,7 +26,7 @@ document.getElementById('btn-sanches').addEventListener('click', function(){
 document.getElementById('btn-player-cost').addEventListener('click',function(){
     const perPlayerCost = parseFloat(document.getElementById('per-player-cost-field').value);
     const playerCount = document.querySelectorAll("li").length;
-    if(isNaN(perPlayerCost)){
+    if(isNaN(perPlayerCost) || (perPlayerCost < 0)){
         alert('Please enter a valid number');
     }
     else{
@@ -36,7 +36,7 @@ document.getElementById('btn-player-cost').addEventListener('click',function(){
 document.getElementById('total-cost').addEventListener('click', function(){
     const managerCost = parseFloat(document.getElementById('manager-cost').value);
     const coachCost = parseFloat(document.getElementById('coach-cost').value);
-    if(isNaN(managerCost) || isNaN(coachCost)){
+    if(isNaN(managerCost) || isNaN(coachCost) || (managerCost < 0) || (coachCost < 0)){
         alert('Please enter a valid number');
     }
     else{
